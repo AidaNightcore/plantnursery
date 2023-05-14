@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   color: antiquewhite;
-  font-size: 1rem;
+  font-size: 0.9rem;
   background-color: #243032;
   font-family: "Libre Baskerville";
 }
@@ -13,36 +13,189 @@
 /* ------- Hero Section -------*/
 
 .hero-section {
+  background: url("./assets/background.jpg") no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
 }
 
-.content:before {
-  left: 0;
-  right: 0;
-  z-index: 1;
-  display: block;
-  background: url(../plantnursery/assets/38e8ea7e3381a58000de79ca59d6e664.jpg)
-    no-repeat;
-  background-size: cover;
-  height: 60vh;
-  position: relative;
+.hero-section-introduction {
+  width: 60vw;
+  text-align: center;
+  background: none;
 }
-.content {
-  left: 0;
-  right: 0;
-  z-index: 2;
-  position: relative;
-}
-.content > h1 {
+.hero-section > h1 {
   font-family: "Amatic SC";
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 7rem;
+  background: none;
 }
+
+.hero-section > input {
+  background: none;
+  border-radius: 15px;
+  padding: 0.5vh 5vw 0.5vh 1vw;
+  display: flex;
+}
+
 /* ------- END Hero Section -------*/
 
+.body-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15vh 7vw 0 7vw;
+}
+
 /* ------- Plant Section -------*/
+
+.plant {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.plant-image {
+  width: 20vw;
+  align-self: center;
+}
+
+#plant0 > img {
+  width: 45vw;
+}
+
+#plant5 > img {
+  width: 100%;
+}
+
+.plant-needs {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vh 0;
+}
+
+.plant-water {
+  display: flex;
+  justify-content: space-around;
+}
+
+.plant-sun {
+  display: flex;
+  justify-content: space-around;
+}
+
+.plant-important {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.plant-name {
+  font-size: 1.7rem;
+}
+
+.plant-price {
+  font-size: 1.7rem;
+}
+
+.plant-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 10vw;
+  row-gap: 10vh;
+}
+
+.plant-water > img,
+.plant-sun > img {
+  margin: 0 0.5vw;
+}
+
+.plant-water > img {
+  width: 1vw;
+  height: auto;
+}
+.plant-sun > img {
+  width: 2vw;
+  height: auto;
+}
+
+#plant0 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+#plant1 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+#plant2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#plant3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+#plant4 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+#plant5 {
+  grid-area: 3 / 1 / 4 / 4;
+}
 
 /* ------- END Plant Section -------*/
 
 /* ------- Contact Section -------*/
-
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+  gap: 3vh;
+  padding: 3vh 3vw;
+  height: max-content;
+}
+.contact-text {
+  background-color: antiquewhite;
+  color: #243032;
+}
+.contact-title {
+  background: none;
+  color: #243032;
+  font-size: 3rem;
+  font-family: "Amatic SC";
+}
+.adress {
+  background: none;
+  color: #243032;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  color: #243032;
+}
+.contact-details > p {
+  background-color: antiquewhite;
+  color: #243032;
+}
+.contact > input {
+  background: none;
+  border-radius: 15px;
+  padding: 0.5vh 5vw 0.5vh 1vw;
+  width: 30vw;
+  height: 20vh;
+  display: flex;
+  color: #243032;
+}
+.contact-send {
+  background: none;
+  border-radius: 15px;
+  padding: 1vh;
+  display: flex;
+  color: #243032;
+}
 /* ------- END Contact Section -------*/
