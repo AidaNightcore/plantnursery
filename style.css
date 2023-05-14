@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Baskervville:ital@0;1&family=Libre+Baskerville:wght@700&display=swap");
+/* ------- Basics -------*/
+* {
+  margin: 0;
+  padding: 0;
+  color: antiquewhite;
+  font-size: 1rem;
+  background-color: #243032;
+  font-family: "Libre Baskerville";
+}
+/* ------- END Basics -------*/
+
+/* ------- Hero Section -------*/
+
+.hero-section {
+}
+
+.content:before {
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background: url(../plantnursery/assets/38e8ea7e3381a58000de79ca59d6e664.jpg)
+    no-repeat;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+}
+.content {
+  left: 0;
+  right: 0;
+  z-index: 2;
+  position: relative;
+}
+.content > h1 {
+  font-family: "Amatic SC";
+  font-weight: 800;
+  font-size: 5rem;
+}
+/* ------- END Hero Section -------*/
+
+/* ------- Plant Section -------*/
+
+/* ------- END Plant Section -------*/
+
+/* ------- Contact Section -------*/
+
+/* ------- END Contact Section -------*/
